@@ -594,12 +594,11 @@ footer {
   width: 100%;
   height: 100%;
   z-index: -2;
-  background-image: linear-gradient(180deg, rgba(5, 8, 17, 0.85) 0%, rgba(5, 8, 17, 0.95) 100%), 
-                    url('assets/hero-bg.png');
-  background-size: cover;
-  background-position: center;
-  transform: scale(1.05);
-  opacity: 0.4;
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/studio-6578078567-d586b.firebasestorage.app/o/SES%20Arena%20Image2.png?alt=media&token=59456ac7-e30b-45ab-92c1-4b03db2e748e');
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center top;
+  opacity: 0.5;
 }
 
 .hero-glow-overlay {
@@ -638,6 +637,13 @@ footer {
   border-radius: 8px;
 }
 
+.hero-rings {
+  display: block;
+  max-width: 160px;
+  height: auto;
+  margin-bottom: 1.5rem;
+}
+
 .hero-tag {
   display: inline-block;
   font-size: 0.75rem;
@@ -670,6 +676,31 @@ footer {
 .hero-ctas {
   display: flex;
   gap: 1.5rem;
+}
+
+/* --- SECTION: ABOUT INTRO --- */
+.about-intro-section {
+  padding: 5rem 0;
+  background-color: transparent;
+  position: relative;
+  z-index: 2;
+}
+
+.about-intro-single {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-intro-text {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: var(--text-light);
+  margin-bottom: 2rem;
+}
+
+.about-intro-text:last-child {
+  margin-bottom: 0;
 }
 
 /* --- SECTION 2: CSEP CREDENTIALING OVERVIEW --- */
@@ -1407,6 +1438,53 @@ footer {
   background-color: rgba(239, 68, 68, 0.1);
   border: 1px solid rgba(239, 68, 68, 0.2);
   color: #ef4444;
+}
+
+/* --- SECTION: RECOGNIZED LOGOS --- */
+.recognized-logos-section {
+  padding: 5rem 0;
+  background-color: transparent;
+  border-bottom: var(--border-glass);
+}
+
+.logos-title {
+  text-align: center;
+  font-family: var(--font-sans);
+  font-weight: 500;
+  font-size: 1.1rem;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+}
+
+.logos-marquee {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.logos-track {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+
+.logo-placeholder {
+  width: 160px;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  font-weight: bold;
 }
 
 /* --- RESPONSIVE MEDIA QUERIES --- */
